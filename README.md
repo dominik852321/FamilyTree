@@ -19,11 +19,14 @@ Example 4 Add/Edit person
 ![Example screenshot](./img/AddEdit.png)
 
 ## Technologies
-Asp.net core MVC
-bootstrap/js
+ASP.NET CORE MVC
+
+Backend: .NET CORE 
+Database: MSSql
+Frontend: Bootstrap/js
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
 
 ## Controller do:
-Search, sort, add, edit, delete
+Search, sort, add, edit, delete, check exist
