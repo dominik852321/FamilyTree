@@ -18,7 +18,7 @@ On down we see 3 buttons. We can there: add new person, edit or delete. We also 
 #### Example 4 Add/Edit person
 ![Example screenshot](./img/AddEdit.png)
 
-#### Technologies
+## Technologies
 ASP.NET CORE MVC<br />
 
 Backend: .NET CORE <br />
