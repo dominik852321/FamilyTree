@@ -1,0 +1,90 @@
+﻿@model VM
+
+@{
+  ViewData["Title"] = "Home Page";
+}
+<div class="row">
+  <div class="col-lg-4 border shadow-sm">
+    <h4>Wyszukiwanie</h4>
+    <form asp-controller="Home" asp-action="Index" method="GET">
+      <div class="mb-3">
+        <div class="form-group m-2 ">
+          <input asp-for="search" class="form-control" placeholder="Wyszukaj...">
+        </div>
+         <div class="form-group m-2 ">
+          <select asp-for="sort" class="form-control">
+             <option value="0">Rosnąco</option>
+             <option value="1">Malejąco</option>
+          </select>
+        </div>
+
+        <div class="form-group m-1 text-center">
+          <button type="submit" class="btn btn-info">Szukaj</button>
+           <a class="btn btn-warning" asp-controller="Home" asp-action="Index">Reset</a>
+        </div>
+      </div>
+
+    </form>
+    <h4>Sortowanie</h4>
+    @if (Model.SearchPeople != null)
+    {
+      <partial name="_database" model="Model.SearchPeople" />
+    }
+  </div>
+  <div class="col-lg-8 border shadow-sm">
+    <p class="display-4 text-center">Rozwijane drzewo Rodzin</p>
+    @if (Model.People != null)
+    {
+      <partial name="_people" model="Model.People" />
+    }
+
+    <div class="row d-flex justify-content-between m-4" id="accordion">
+
+      <a class="btn btn-info" type="button" asp-controller="Home" asp-action="AddPerson">Dodaj osobę</a>
+
+      <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+        aria-controls="collapse2">
+        Edytuj/Przenieś osobę
+      </button>
+      <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+        aria-controls="collapse3">
+        Usuń osobę
+      </button>
+
+
+      <div class="collapse col-12 mt-2" id="collapse2">
+        <div class="card card-body">
+          <h4>Edytowanie/Przenoszenie osoby</h4>
+          <form asp-controller="Home" asp-action="EditPerson" method="GET">
+            <div class="row p-3 ">
+              <div class="form-group m-2 ">
+                <select asp-for="Id" class="form-control" asp-items="ViewBag.people"></select>
+                </select>
+              </div>
+              <div class="form-group m-2">
+                <button type="submit" class="btn btn-primary">Przejdz do edycji</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="collapse col-12 mt-2" id="collapse3">
+        <div class="card card-body">
+          <h4>Usuwanie osoby</h4>
+          <form asp-controller="Home" asp-action="DeletePerson" method="POST">
+            <div class="row p-3 ">
+              <div class="form-group m-2 ">
+                <select asp-for="Id" class="form-control" asp-items="ViewBag.people"></select>
+                </select>
+              </div>
+              <div class="form-group m-2">
+                <button type="submit" class="btn btn-warning">Usuń</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+@model List<Person>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id </th>
+            <th>Name</th>
+            <th>Parent Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model)
+        {
+            <tr>
+                <td>@person.Id</td>
+                <td>@person.Name</td>
+                <td>@person.ParentId</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

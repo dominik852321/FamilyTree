@@ -1,0 +1,125 @@
+[
+  {
+    "Id": 1,
+    "Name": "Janusz Kowalski"
+  },
+  {
+    "Id": 2,
+    "Name": "Maciek Kowalski",
+    "ParentId": 1
+  },
+  {
+    "Id": 3,
+    "Name": "Kamil Kowalski",
+    "ParentId": 1
+  },
+  {
+    "Id": 4,
+    "Name": "Jacek Kowalski",
+    "ParentId": 2
+  },
+  {
+    "Id": 5,
+    "Name": "Wojtek Kowalski",
+    "ParentId": 2
+  },
+  {
+    "Id": 6,
+    "Name": "Ula Kowalski",
+    "ParentId": 3
+  },
+  {
+    "Id": 7,
+    "Name": "Ola Kowalski",
+    "ParentId": 3
+  },
+  {
+    "Id": 8,
+    "Name": "Wieslaw Nowak"
+  },
+  {
+    "Id": 9,
+    "Name": "Maria Nowak",
+    "ParentId": 8
+  },
+  {
+    "Id": 10,
+    "Name": "Karol Nowak",
+    "ParentId": 8
+  },
+  {
+    "Id": 11,
+    "Name": "Miłosz Nowak",
+    "ParentId": 9
+  },
+  {
+    "Id": 12,
+    "Name": "Ula Nowak",
+    "ParentId": 9
+  },
+  {
+    "Id": 13,
+    "Name": "Michal Nowak",
+    "ParentId": 10
+  },
+  {
+    "Id": 14,
+    "Name": "Jacek Nowak",
+    "ParentId": 10
+  },
+  {
+    "Id": 15,
+    "Name": "Kazimierz Bartnik"
+  },
+  {
+    "Id": 16,
+    "Name": "Walia Bartnik",
+    "ParentId": 15
+  },
+  {
+    "Id": 17,
+    "Name": "Teresa Bartnik",
+    "ParentId": 15
+  },
+  {
+    "Id": 18,
+    "Name": "Pawel Bartnik",
+    "ParentId": 16
+  },
+  {
+    "Id": 19,
+    "Name": "Iza Bartnik",
+    "ParentId": 16
+  },
+  {
+    "Id": 20,
+    "Name": "Grzegorz Bartnik",
+    "ParentId": 17
+  },
+  {
+    "Id": 21,
+    "Name": "Przemyslaw Bartnik",
+    "ParentId": 17
+  },
+  {
+    "Id": 22,
+    "Name": "Monika Kowalski",
+    "ParentId": 4
+  },
+  {
+    "Id": 23,
+    "Name": "Karolina Kowalski",
+    "ParentId": 4
+  },
+  {
+    "Id": 24,
+    "Name": "Karolina Nowak",
+    "ParentId": 11
+  },
+  {
+    "Id": 25,
+    "Name": "Marcelina Nowak",
+    "ParentId": 11
+  }
+
+]

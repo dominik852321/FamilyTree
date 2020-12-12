@@ -1,0 +1,40 @@
+@model List<Person>
+
+@foreach (var a in Model.Where(x => x.ParentId == 0))
+{
+
+    <li class="list-group-item m-1" style="cursor: pointer;" data-toggle="collapse" data-target=#@a.Name
+        aria-expanded="true" aria-controls=@a.Name>@a.Name</li>
+        
+    <div id=@a.Name class="collapse">
+        <ul>
+            @foreach (var b in Model.Where(x => x.ParentId == a.Id))
+            {
+              
+                    <li class="list-group-item m-1" style="cursor: pointer;" data-toggle="collapse"
+                        data-target=#@b.Name aria-expanded="true" aria-controls=@b.Name>@b.Name</li>
+
+                    <div id=@b.Name class="collapse">
+                        <ul>
+                            @foreach (var c in Model.Where(x => x.ParentId == b.Id))
+                            {
+                                <li class="list-group-item m-1" style="cursor: pointer;" data-toggle="collapse"
+                                  data-target=#@c.Name aria-expanded="true" aria-controls=@c.Name>@c.Name</li>
+
+                                  <div id=@c.Name class="collapse">
+                                      <ul>
+                                          @foreach (var d in Model.Where(x => x.ParentId == c.Id))
+                                          {
+                                              <li class="list-group-item m-1" >@d.Name</li>
+                                          }
+                                      </ul>
+                                  </div>
+                            }
+                        </ul>
+                    </div>
+            }
+        </ul>
+    </div>
+}
+
+
