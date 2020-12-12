@@ -25,5 +25,5 @@ bootstrap/js
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
 
-Controller do:
+## Controller do:
 Search, sort, add, edit, delete
