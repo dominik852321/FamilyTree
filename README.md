@@ -6,19 +6,19 @@ In right side we have tree. We can expand all familys. <br />
 On down we see 3 buttons. We can there: add new person, edit or delete. We also can transfer person to another family.  <br />
 
 ## Screenshots
-## Example 1 Main Side
+### Example 1 Main Side
 ![Example screenshot](./img/Main.png)
 
-## Example 2 Expand tree
+#### Example 2 Expand tree
 ![Example screenshot](./img/expand.png)
 
-## Example 3 Search by name person
+#### Example 3 Search by name person
 ![Example screenshot](./img/searchbyname.png)
 
-## Example 4 Add/Edit person
+#### Example 4 Add/Edit person
 ![Example screenshot](./img/AddEdit.png)
 
-## Technologies
+#### Technologies
 ASP.NET CORE MVC<br />
 
 Backend: .NET CORE <br />
@@ -26,7 +26,7 @@ Database: MSSql<br />
 Frontend: Bootstrap/js<br />
 
 ## Setup
-### Dependiences: <br />
+#### Dependiences: <br />
 Microsoft SQL Server <br />
 .NET 5.0 SDK <br />
 Visual Studio Code/2019 <br /> <br />
