@@ -6,7 +6,7 @@ In right side we have tree. We can expand all familys. <br />
 On down we see 3 buttons. We can there: add new person, edit or delete. We also can transfer person to another family.  <br />
 
 ## Screenshots
-### Example 1 Main Side
+#### Example 1 Main Side
 ![Example screenshot](./img/Main.png)
 
 #### Example 2 Expand tree
