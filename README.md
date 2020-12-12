@@ -26,10 +26,10 @@ Database: MSSql<br />
 Frontend: Bootstrap/js<br />
 
 ## Setup
-# Dependiences: <br />
-Microsoft SQL Server
-.NET 5.0 SDK
-Visual Studio Code/2019
+### Dependiences: <br />
+Microsoft SQL Server <br />
+.NET 5.0 SDK <br />
+Visual Studio Code/2019 <br /> <br />
 
 1. Clone repo https://github.com/dominik852321/DominikFamilyTree.git <br />
 2. When you run project by command 'dotnet run' automatically your database create on your server database (setting server database in folder 'appsettings.json') <br />
