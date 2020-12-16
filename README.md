@@ -6,16 +6,16 @@ In right side we have tree. We can expand all familys. <br />
 On down we see 3 buttons. We can there: add new person, edit or delete. We also can transfer person to another family.  <br />
 
 ## Screenshots
-Example 1 Main Side
+#### Example 1 Main Side
 ![Example screenshot](./img/Main.png)
 
-Example 2 Expand tree
+#### Example 2 Expand tree
 ![Example screenshot](./img/expand.png)
 
-Example 3 Search by name person
+#### Example 3 Search by name person
 ![Example screenshot](./img/searchbyname.png)
 
-Example 4 Add/Edit person
+#### Example 4 Add/Edit person
 ![Example screenshot](./img/AddEdit.png)
 
 ## Technologies
@@ -26,7 +26,13 @@ Database: MSSql<br />
 Frontend: Bootstrap/js<br />
 
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+#### Dependiences: <br />
+Microsoft SQL Server <br />
+.NET 5.0 SDK <br />
+Visual Studio Code/2019 <br /> <br />
 
+1. Clone repo https://github.com/dominik852321/FamilyTree.git <br />
+2. When you run project by command 'dotnet run' automatically your database create on your server database (setting server database in folder 'appsettings.json') <br />
+3. You can use <br />
 ## Controller do:
 Search, sort, add, edit, delete, check exist
