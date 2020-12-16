@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using DominikO_Tree.ViewModels;
 using System.Threading;
+using System.Text.Json;
 
 namespace DominikO_Tree.Controllers
 {
@@ -59,10 +60,8 @@ namespace DominikO_Tree.Controllers
         [HttpPost]
         public async Task<IActionResult> AddPerson(AddPersonVM addPerson)
         {
-            var exist = await CheckNameExist(addPerson.Name);
-            if (ModelState.IsValid && exist.ToString() == "0")
+            if (ModelState.IsValid && await CheckNameExist(addPerson.Name) == 0)
             {
-                
                 var peopleCount = await _context.People.CountAsync() + 1;
 
                 Person person = new Person()
@@ -123,15 +122,15 @@ namespace DominikO_Tree.Controllers
            return RedirectToAction("Index");
         }
 
-        public async Task<JsonResult> CheckNameExist(string name)
+        public async Task<int> CheckNameExist(string name)
         {
             var searchName = await _context.People.Where(x => x.Name == name).CountAsync();
             if(searchName>0)
             {
-                return Json(1);
+                return 1;
             }
             
-            return Json(0);
+            return 0;
         }
     }
 }

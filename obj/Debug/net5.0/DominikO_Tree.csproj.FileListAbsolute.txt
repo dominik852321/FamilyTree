@@ -388,3 +388,6 @@ C:\Users\Dominik\Projekty\DominikO_Tree\obj\Debug\net5.0\Razor\Views\Home\_peopl
 C:\Users\Dominik\Projekty\DominikO_Tree\obj\Debug\net5.0\Razor\Views\Home\EditPerson.cshtml.g.cs
 C:\Users\Dominik\Projekty\DominikO_Tree\obj\Debug\net5.0\Razor\Views\Home\_database.cshtml.g.cs
 C:\Users\Dominik\Projekty\DominikO_Tree\obj\Debug\net5.0\Razor\Views\Home\AddPerson.cshtml.g.cs
+C:\Users\Dominik\Projekty\DominikO_Tree\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Dominik\Projekty\DominikO_Tree\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Dominik\Projekty\DominikO_Tree\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
